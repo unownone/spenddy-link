@@ -1,0 +1,44 @@
+name: Build & Release Chrome Extension
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build & zip extension (Chrome)
+        run: pnpm zip
+
+      - name: Extract version
+        id: pkg
+        run: echo "VERSION=$(node -p \"require('./package.json').version\")" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub Release & upload asset
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: "v${{ steps.pkg.outputs.VERSION }}"
+          name: "Spenddy Link v${{ steps.pkg.outputs.VERSION }}"
+          files: "spenddy-link-${{ steps.pkg.outputs.VERSION }}-chrome.zip"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
