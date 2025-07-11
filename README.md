@@ -2,6 +2,12 @@
 
 Spenddy Link is a lightweight, privacy-respecting browser extension that helps you seamlessly transfer your **Swiggy** order history to [Spenddy](https://spenddy.ikr.one/) where you can analyse your food spending patterns.
 
+## Install from Chrome Web Store
+
+Spenddy Link is now publicly available:
+
+[**Install Spenddy Link**](https://chromewebstore.google.com/detail/mibpmhoncjmniigifepbckapmoflkglo)
+
 ![Spenddy Link Demo](assets/demo/demo_01.png)
 
 The extension performs three things:
@@ -42,7 +48,7 @@ Built with [WXT](https://wxt.dev/) + TypeScript, it works in both **Chrome** and
    pnpm dev:firefox
    ```
 
-   The compiled extension will be output to `.wxt/dist/` (Chrome) or `.wxt/dist-firefox/` (Firefox). Follow the _Load unpacked_ instructions below to load it into your browser.
+   The compiled extension will be output to `.wxt/dist/` (Chrome) or `.wxt/dist-firefox/` (Firefox). Follow the *Load unpacked* instructions below to load it into your browser.
 
 ---
 
@@ -122,4 +128,4 @@ wxt.config.ts          # WXT configuration
 
 ## License
 
-[MIT](LICENSE) – © 2024 Spenddy 
+[MIT](LICENSE) – © 2024 Spenddy
