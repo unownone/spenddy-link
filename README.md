@@ -1,6 +1,6 @@
 # Spenddy Link Browser Extension
 
-Spenddy Link is a lightweight, privacy-respecting browser extension that helps you seamlessly transfer your **Swiggy** order history to [Spenddy](https://spenddy.ikr.one/) where you can analyse your food spending patterns.
+Spenddy Link is a lightweight, privacy-respecting browser extension that helps you seamlessly transfer your **Swiggy** order history to [Spenddy](https://spenddy.fyi/) where you can analyse your food spending patterns.
 
 ## Install from Chrome Web Store
 

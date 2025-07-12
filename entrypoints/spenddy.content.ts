@@ -3,7 +3,7 @@
 declare const chrome: any;
 
 export default defineContentScript({
-  matches: ['*://spenddy.ikr.one/*'],
+  matches: ['*://spenddy.fyi/*'],
   main() {
     requestAndStore();
 

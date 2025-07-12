@@ -69,7 +69,7 @@ function renderConnected(ordersFetched: boolean, latestOrderTime?: string | null
 
     const btn = document.querySelector<HTMLButtonElement>('#open-spenddy')!;
     btn.addEventListener('click', () => {
-      chrome.tabs.create({ url: 'https://spenddy.ikr.one/' });
+      chrome.tabs.create({ url: 'https://spenddy.fyi/' });
     });
   }
 }

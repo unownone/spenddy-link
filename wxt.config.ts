@@ -4,7 +4,7 @@ import { defineConfig } from 'wxt';
 export default defineConfig({
   manifest: {
     permissions: ['storage', 'tabs'],
-    host_permissions: ['https://*.swiggy.com/*', '*://spenddy.ikr.one/*'],
+    host_permissions: ['https://*.swiggy.com/*', '*://spenddy.fyi/*'],
     icons: {
       '16': 'icon/logo-16.png',
       '32': 'icon/logo-32.png',
