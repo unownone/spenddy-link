@@ -126,6 +126,13 @@ wxt.config.ts          # WXT configuration
 
 ---
 
+## Further documentation
+
+* [Extension Architecture](docs/ARCHITECTURE.md) – component diagram, message matrix, build process.
+* [Data Type Reference](docs/DATA_TYPES.md) – full TypeScript interfaces for Swiggy order payloads and storage keys.
+
+---
+
 ## License
 
 [MIT](LICENSE) – © 2024 Spenddy
